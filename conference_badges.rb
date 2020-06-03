@@ -14,9 +14,8 @@ end
 
 def assign_rooms(speaker)
   assignments = []
-  speaker. each do |name, room|
-    room = (speaker.each_with_index)+1
-    assignments << "Hello, #{name}! You'll be assigned to room #{room}!"
+  speaker. each do |name|
+    assignments << "Hello, #{name}! You'll be assigned to room #{(name.each_with_index)+1}!"
   end
   return assignments
 end
